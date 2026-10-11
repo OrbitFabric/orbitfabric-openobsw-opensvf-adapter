@@ -1,12 +1,12 @@
 # OrbitFabric OpenOBSW/OpenSVF Adapter
 
-Candidate `0.1.1` is unpublished and awaits review. See [candidate release notes](docs/releases/0.1.1.md). New releases use the canonical `github.com/OrbitFabric` authority.
+**Current published release:** [`v0.1.1`](https://github.com/OrbitFabric/orbitfabric-openobsw-opensvf-adapter/releases/tag/v0.1.1) (2026-09-25), indexed in the [OrbitFabric Adapter Catalog](https://github.com/OrbitFabric/orbitfabric-adapter-catalog). New releases use the canonical `github.com/OrbitFabric` authority; historical identities remain unchanged. Publishing an adapter does not promote Core-owned lifecycle and integration contracts from candidate maturity.
 
 Integration adapter connecting [OrbitFabric](https://github.com/OrbitFabric/orbitfabric) mission contracts with the native integration and validation surfaces provided by [OpenOBSW](https://github.com/lipofefeyt/openobsw) and [OpenSVF](https://github.com/lipofefeyt/opensvf).
 
 OrbitFabric, OpenOBSW and OpenSVF remain independent systems. OrbitFabric Core owns generic mission and integration contracts, this adapter owns target-specific projection, and the downstream projects own their native runtime and validation semantics.
 
-> **Release status:** `v0.1.0` is published as an immutable GitHub Release and has passed post-publication Adapter Manager verification and external greenfield acceptance. The release is indexed in the canonical OrbitFabric Adapter Catalog and can participate in the exact Catalog selection / provider-specific release-resolution path introduced with OrbitFabric Core `v1.3.0`.
+> **Release history:** `v0.1.1` is the current published post-migration identity-normalization patch; projection behavior and pinned downstream compatibility are unchanged. Historical `v0.1.0` remains published with its original FAROTECH Source Coordinate and its separately documented post-publication Adapter Manager / external greenfield acceptance. The current Catalog indexes both exact releases without rewriting historical identity.
 
 ## Choose your path
 
@@ -193,8 +193,10 @@ python package   orbitfabric_openobsw_opensvf_adapter
 adapter.id       orbitfabric-openobsw-opensvf
 integration.id   orbitfabric-openobsw-opensvf
 logical key      orbitfabric/openobsw-opensvf
-version          0.1.0
+version          0.1.1
 ```
+
+The current published Source Coordinate is `github.com/OrbitFabric:orbitfabric/openobsw-opensvf@0.1.1`. The `v0.1.0` coordinate `github.com/FAROTECH:orbitfabric/openobsw-opensvf@0.1.0` remains historical and unchanged.
 
 The release is classified as an **OrbitFabric-maintained stable adapter**. It is not yet described as registry-classified official because the generic OrbitFabric publisher/registry governance layer has not been promoted.
 
@@ -279,6 +281,11 @@ The documentation is deliberately organized by role:
 - [Architecture and Ownership](docs/architecture-and-ownership.md)
 - [Integration Contracts](docs/integration-contracts.md)
 - [Testing and Conformance](docs/testing-and-conformance.md)
+
+### Release
+
+- [0.1.1 release notes](docs/releases/0.1.1.md)
+- [0.1.0 historical publication](https://github.com/OrbitFabric/orbitfabric-openobsw-opensvf-adapter/releases/tag/v0.1.0)
 
 ### Maintainer / Publisher
 

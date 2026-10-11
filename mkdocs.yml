@@ -59,6 +59,8 @@ nav:
       - Testing and Conformance: testing-and-conformance.md
       - Evidence and Traceability: evidence-and-traceability.md
       - PoC Background: migrating-from-poc.md
+  - Releases:
+      - 0.1.1: releases/0.1.1.md
   - Maintainer / Publisher:
       - Overview: publishing.md
       - Release Lifecycle: release-lifecycle.md

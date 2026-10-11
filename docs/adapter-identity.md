@@ -1,6 +1,6 @@
 # Adapter Identity
 
-Current worktree: unpublished `0.1.1` post-migration candidate. See [release notes](releases/0.1.1.md). Prior release versions below describe historical baselines; new descriptors use `github.com/OrbitFabric`.
+Current published release: [`v0.1.1`](https://github.com/OrbitFabric/orbitfabric-openobsw-opensvf-adapter/releases/tag/v0.1.1) (2026-09-25). See [release notes](releases/0.1.1.md). The prior `v0.1.0` release retains its historical FAROTECH identity and published bytes.
 
 The OpenOBSW/OpenSVF adapter uses several related identities. They are intentionally kept distinct because package identity, execution identity, logical product identity and release-source identity serve different contracts.
 
@@ -56,7 +56,7 @@ This identity is intended to survive ordinary changes in repository location or 
 
 ## Version
 
-The stable release candidate is:
+The current published release version is:
 
 ```text
 0.1.1
@@ -68,7 +68,7 @@ The earlier PoC baseline and `0.1.0.dev0` productization baseline remain histori
 
 ## Source Coordinate
 
-The first stable release source uses:
+The current post-migration `v0.1.1` release source uses:
 
 ```text
 authority = github.com/OrbitFabric
@@ -76,13 +76,13 @@ publisher = orbitfabric
 name      = openobsw-opensvf
 ```
 
-Rendered for the current explicit-source Adapter Manager CLI:
+Rendered as the current release Source Coordinate:
 
 ```text
 github.com/OrbitFabric:orbitfabric/openobsw-opensvf
 ```
 
-The source authority identifies the concrete resolution context for the first release.
+The source authority identifies the current concrete resolution context. The earlier `v0.1.0` release retains `github.com/FAROTECH:orbitfabric/openobsw-opensvf` without reidentification.
 
 It does not mean:
 

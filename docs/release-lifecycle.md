@@ -1,12 +1,12 @@
 # Release Lifecycle
 
-Current worktree: unpublished `0.1.1` post-migration candidate. See [release notes](releases/0.1.1.md). Prior release versions below describe historical baselines; new descriptors use `github.com/OrbitFabric`.
+Current published release: [`v0.1.1`](https://github.com/OrbitFabric/orbitfabric-openobsw-opensvf-adapter/releases/tag/v0.1.1) (2026-09-25). See [0.1.1 release notes](releases/0.1.1.md). The historical `v0.1.0` publication and its original FAROTECH Source Coordinate remain unchanged.
 
 This repository separates publisher release construction, consumer project selection and publication transport.
 
 Reusable publication guidance is maintained here and in the [Maintainer / Publisher Guide](publishing.md).
 
-## Current v0.1.0 state
+## Historical v0.1.0 publication and acceptance
 
 `v0.1.0` was published on **2026-09-03** as an immutable GitHub Release.
 
@@ -24,7 +24,7 @@ native OpenOBSW/OpenSVF Closed-Loop Ping acceptance
 
 The public greenfield run completed the native OpenSVF campaign with a 100% pass rate. Publication gates P1-P13 are complete, including final Architecture Lab evidence retention.
 
-The current consumer installation path is still explicit-source: users download the published Release Descriptor and wheel before calling Adapter Manager. Future catalog/release-resolution support may automate discovery and acquisition, but must consume the existing immutable release rather than redefine it.
+The `v0.1.0` public greenfield acceptance used explicit-source installation after downloading the published Release Descriptor and wheel. The current Core 1.4.0 / GitHub Release Source 0.1.0 onboarding also supports Catalog-based acquisition of exact published releases, including `v0.1.1`, without changing historical release identities.
 
 ## Historical stable source identity
 
@@ -56,9 +56,9 @@ GitHub Release
 
 These roles must remain separate.
 
-## Build the stable wheel
+## Build a release wheel
 
-From the accepted stable source baseline:
+From the matching accepted source baseline (the example below is `v0.1.1`):
 
 ```bash
 python -m build --wheel
@@ -80,7 +80,7 @@ including its unique `integration_package.json`, Profile schema and target resou
 
 ## Publisher-owned release construction
 
-For publication, use:
+For release construction (shown for `v0.1.1`), use:
 
 ```bash
 python tools/build_release_bundle.py \
@@ -98,10 +98,10 @@ adapter-release.json
 SHA256SUMS
 ```
 
-The stable publisher release membership is therefore:
+The `v0.1.1` publisher release membership is therefore:
 
 ```text
-v0.1.0 tag
+v0.1.1 tag
 orbitfabric_openobsw_opensvf_adapter-0.1.1-py3-none-any.whl
 adapter-release.json
 SHA256SUMS
@@ -147,9 +147,9 @@ initial state MISSING
 
 The lock used by CI is engineering evidence for a consumer selection. It is not canonical publisher release membership.
 
-## Stable Source Coordinate
+## Current published Source Coordinate
 
-The first stable release uses:
+The post-migration `v0.1.1` release uses:
 
 ```text
 authority = github.com/OrbitFabric
@@ -157,13 +157,13 @@ publisher = orbitfabric
 name      = openobsw-opensvf
 ```
 
-Rendered for the current Adapter Manager explicit-source CLI:
+Rendered as the exact published Source Coordinate:
 
 ```text
 github.com/OrbitFabric:orbitfabric/openobsw-opensvf
 ```
 
-The authority identifies the first concrete source context. It does not make `OrbitFabric` the logical publisher and does not define GitHub as the universal OrbitFabric registry.
+The authority identifies the concrete post-migration source context; it does not define GitHub as a universal OrbitFabric registry. The earlier `v0.1.0` release retains the historical `github.com/FAROTECH:orbitfabric/openobsw-opensvf` Source Coordinate.
 
 A future source authority may change without changing the logical product key:
 
