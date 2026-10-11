@@ -1,6 +1,6 @@
 # Maintainer / Publisher Guide
 
-Current worktree: unpublished `0.1.1` post-migration candidate. See [release notes](releases/0.1.1.md). Prior release versions below describe historical baselines; new descriptors use `github.com/OrbitFabric`.
+Current published release: [`v0.1.1`](https://github.com/OrbitFabric/orbitfabric-openobsw-opensvf-adapter/releases/tag/v0.1.1) (2026-09-25). See [0.1.1 release notes](releases/0.1.1.md). Sections explicitly labeled `v0.1.0` preserve historical publisher evidence and its original FAROTECH release identity.
 
 This section is for maintainers preparing, proving and publishing an adapter release.
 
@@ -110,7 +110,7 @@ python tools/build_release_bundle.py \
 
 This produces the publisher-owned Release Descriptor and checksum summary.
 
-For a future release version, use the corresponding accepted source and artifact version rather than reusing `v0.1.0` publication bytes.
+The command above describes the published `v0.1.1` release construction lane. For any future release, use the matching accepted source, version and artifact identity rather than reusing either `v0.1.0` or `v0.1.1` publication bytes.
 
 ## Publication and final acceptance
 
@@ -131,17 +131,22 @@ For `v0.1.0`, that path has been completed successfully.
 
 ## Current consumer acquisition boundary
 
-The current Adapter Manager installation path still expects the user to obtain the Release Descriptor and artifact before installation.
-
-Today:
+The published Core `v1.4.0` and GitHub Release Source `v0.1.0` support Catalog-based exact-release selection and provider acquisition, including this published adapter `v0.1.1`:
 
 ```text
-GitHub Release
-    -> manual asset acquisition
-    -> Adapter Manager install
+Core Catalog exact selection
+    -> GitHub Release Source acquisition and byte verification
+    -> Adapter Manager install / verify
 ```
 
-A future Adapter Catalog + Release Resolution layer may automate discovery, exact resolution and acquisition. That future layer must consume the existing immutable `v0.1.0` release rather than requiring it to be republished.
+The earlier explicit-source path remains supported, including the historical `v0.1.0` acceptance route:
+
+```text
+manual GitHub Release asset acquisition
+    -> Adapter Manager install / verify
+```
+
+The Catalog retains the exact historical FAROTECH identity; neither release is republished or reidentified.
 
 ## Publisher references
 

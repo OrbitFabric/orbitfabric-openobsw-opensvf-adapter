@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.1.1 - 2026-09-25
+
+### Changed
+
+- Published post-migration adapter identity `github.com/OrbitFabric:orbitfabric/openobsw-opensvf@0.1.1`.
+- Changed the exact pinned Core dependency acquisition to a commit-addressed HTTPS source archive, keeping its validated SHA unchanged.
+- Preserved the `project` and `verification_projection` behavior, exact downstream compatibility lane and historical `v0.1.0` FAROTECH release identity.
+
+### Publication
+
+- Published `v0.1.1` with `adapter-release.json`, the matching wheel and `SHA256SUMS`; indexed the exact descriptor digest in the canonical Adapter Catalog.
+- Maintained candidate Core-owned lifecycle and integration contract maturity. Historical `v0.1.0` greenfield acceptance is not a new acceptance claim for `v0.1.1`.
+
 ## 0.1.0 - 2026-09-03
 
 First stable OrbitFabric-maintained release of the OpenOBSW/OpenSVF adapter.

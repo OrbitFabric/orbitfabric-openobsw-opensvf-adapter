@@ -1,8 +1,10 @@
 # Getting Started
 
-## Current onboarding candidate
+## Install the current published release
 
-After approved publication of Core 1.4.0, GitHub Release Source 0.1.0 and this adapter 0.1.1, and promotion of its exact descriptor to the Catalog:
+Core [v1.4.0](https://github.com/OrbitFabric/orbitfabric/releases/tag/v1.4.0), GitHub Release Source [v0.1.0](https://github.com/OrbitFabric/orbitfabric-github-release-source/releases/tag/v0.1.0) and this adapter [v0.1.1](https://github.com/OrbitFabric/orbitfabric-openobsw-opensvf-adapter/releases/tag/v0.1.1) were published on 2026-09-25. The exact adapter Release Descriptor is indexed in the canonical Catalog. Their product publication does not promote Core-owned adapter lifecycle or integration contracts from candidate maturity. No PyPI publication is assumed.
+
+Use the published Core installation manifest and exact adapter version:
 
 ```bash
 python3 -m venv .venv
@@ -13,11 +15,11 @@ orbitfabric adapter list
 orbitfabric adapter verify <instance-id>
 ```
 
-These candidate releases are not yet published. The new installed identity is `github.com/OrbitFabric:orbitfabric/openobsw-opensvf@0.1.1`. No clone, manual adapter download or Project Lock is required. Use `--catalog-revision <commit-sha>` to pin the Catalog, or `--catalog ./catalog.json` for a local snapshot.
+The installed identity is `github.com/OrbitFabric:orbitfabric/openobsw-opensvf@0.1.1`. No repository clone, manual adapter download or Project Lock is required for this Catalog-based path. Use `--catalog-revision <40-character-commit-sha>` to pin the Catalog, or `--catalog ./catalog.json` for a local snapshot. A matching `v0.1.1` repository tag or source archive supplies example inputs and runner scripts without changing the installed release bytes. Publication does not alone establish a separate external clean-environment end-to-end acceptance for this coordinated version.
 
 ## Historical manual installation reference
 
-The prior-release instructions below preserve the historical baseline. They are not the current canonical onboarding demonstration. Historical FAROTECH Source Coordinates remain immutable.
+The instructions below preserve the separately accepted historical `v0.1.0` explicit-source installation baseline. They are not the current `v0.1.1` Catalog-based onboarding path. Historical FAROTECH Source Coordinates and their published artifacts remain unchanged.
 
 This guide is for **users of the adapter**.
 
@@ -37,8 +39,8 @@ You do **not** need to install this repository in editable mode, build a wheel, 
 
 If you want to modify the adapter, use the [Developer / Contributor Guide](development.md). If you are preparing a release, use the [Maintainer / Publisher Guide](publishing.md).
 
-!!! note "v0.1.0 publication status"
-    `v0.1.0` is published as an immutable GitHub Release and has passed post-publication Adapter Manager verification and external greenfield acceptance. The current Adapter Manager still uses an explicit-source installation flow, so consumers download the published release assets first and then install them locally. Future catalog/release-resolution support is expected to remove this manual acquisition step without changing the immutable `v0.1.0` release.
+!!! note "Historical v0.1.0 publication and acceptance"
+    `v0.1.0` was published as an immutable GitHub Release and passed post-publication Adapter Manager verification and external greenfield acceptance using the explicit-source flow documented below. The modern Core 1.4.0 Catalog/provider path can also select the exact historical release without modifying its original Source Coordinate or published assets.
 
 ## Validated baselines
 
@@ -216,7 +218,7 @@ The repository provides three progressive examples:
 | [Scenario Verification Projection](examples/scenario-verification-projection.md) | Scenario intent -> explicit Verification Projection Plan and OpenSVF-native assets |
 | [Closed-Loop Ping](examples/closed-loop-ping.md) | Generated artifacts -> OpenOBSW `obsw_sim` -> native OpenSVF campaign -> CampaignReport |
 
-For a released version, obtain the matching repository source archive or `v0.1.0` tag **only to access the example inputs and runner scripts**. Do not install the adapter from that checkout.
+For this historical `v0.1.0` walkthrough, obtain the matching repository source archive or `v0.1.0` tag **only to access the example inputs and runner scripts**. For current `v0.1.1` onboarding, use the corresponding `v0.1.1` source archive. In either case, do not install the adapter from that checkout.
 
 With `ORBITFABRIC_ADAPTER_INSTANCE_ID` set, the example runners use the already-installed Adapter Manager instance.
 

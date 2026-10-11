@@ -4,7 +4,7 @@ This documentation describes the OrbitFabric adapter that projects selected miss
 
 OrbitFabric, OpenOBSW and OpenSVF remain independent systems. OrbitFabric Core owns generic mission and integration contracts, this adapter owns target-specific projection, and the downstream projects own their native execution and validation semantics.
 
-The `0.1.0` source baseline is validated against exact Core, OpenOBSW and OpenSVF baselines. Public distribution through an immutable GitHub Release is a separate publication step.
+The current published release is [`v0.1.1`](https://github.com/OrbitFabric/orbitfabric-openobsw-opensvf-adapter/releases/tag/v0.1.1), indexed under `github.com/OrbitFabric:orbitfabric/openobsw-opensvf@0.1.1` in the canonical Catalog. The earlier `v0.1.0` release and its historical FAROTECH identity remain unchanged. The exact Core, OpenOBSW and OpenSVF validation lane is unchanged, and release publication does not promote Core-owned contracts from candidate maturity.
 
 ## Choose your path
 
@@ -67,6 +67,11 @@ The adapter owns projection.
 OpenOBSW and OpenSVF own downstream execution and validation.
 Evidence retains provenance across the boundary.
 ```
+
+## Releases
+
+- [0.1.1 release notes](releases/0.1.1.md)
+- [Historical 0.1.0 GitHub Release](https://github.com/OrbitFabric/orbitfabric-openobsw-opensvf-adapter/releases/tag/v0.1.0)
 
 ## Detailed references
 
